@@ -15,7 +15,7 @@ export default function NotFound() {
                 </div>
                 {/* 오른쪽 */}
                 <div className="w-1/2 h-full flex justify-center overflow-hidden">
-                    <img className="animate-scream" src={NotImage} alt="not_image" />
+                    <img className="animate-scared" src={NotImage} alt="not_image" />
                 </div>
             </div>
         </div>

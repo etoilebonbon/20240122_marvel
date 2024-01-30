@@ -19,7 +19,7 @@ export default {
         }
       },
       animation: {
-        scream : "scream 2s ease-in-out infinite"
+        scared : "scared 2s ease-in-out infinite"
       }
     },
   },

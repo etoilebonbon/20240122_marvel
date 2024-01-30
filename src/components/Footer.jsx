@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterLogo from "../assets/png/logo_small.png";
+import FooterLogo from "../assets/png/logo-small.png";
 import Facebook from '../assets/Facebook';
 import Twitter from '../assets/Twitter';
 import Insta from '../assets/Insta';
@@ -14,24 +14,24 @@ export default function Footer() {
     <div className="bg-main-dark w-full flex justify-center py-16">
         <div className="max-w-7xl w-full flex justify-between text-white">
             {/* 1. 로고파트 */}
-            <div>
+            <div className="flex space-x-8">           
                 {/* 로고 */}
-                <div className="flex space-x-8">
+                <div>
                     <img src={FooterLogo} alt="footer_logo" />
                 </div>
                 {/* 2 */}
                 <div>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
+                    <p>ABOUT MARVEL</p>
+                    <p>HELP/FAQS</p>
+                    <p>CAREERS</p>
+                    <p>INTERNSHIPS</p>
                 </div>
                 {/* 3 */}
                 <div>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
+                    <p>ADVERTISING</p>
+                    <p>DISNEY+</p>
+                    <p>MARVELHQ.COM</p>
+                    <p>REDEEM DIGITAL</p>
                 </div>
             </div>
             {/* 2. ads */}
@@ -40,7 +40,10 @@ export default function Footer() {
                 <div className="flex space-x-4">
                     {/* image */}
                     <div className="h-8">
-                        <img className = "" src = "https://cdn.marvel.com/content/1x/marvel_insider-topnav-logo-large2x.png" alt="insider_image"/>
+                        <img 
+                        className = "h-full" 
+                        src = "https://cdn.marvel.com/content/1x/marvel_insider-topnav-logo-large2x.png" 
+                        alt="insider_image"/>
                     </div>
                     {/* description */}
                     <div className="text-white">
@@ -52,7 +55,9 @@ export default function Footer() {
                 <div className="flex space-x-4">
                     {/* image */}
                     <div>
-                        <img className="" src = "https://cdn.marvel.com/content/1x/mu-logo-w-nav-2x-2021-02.png" alt="insider_image"/>
+                        <img className="h-full" 
+                        src = "https://cdn.marvel.com/content/1x/mu-logo-w-nav-2x-2021-02.png" 
+                        alt="insider_image"/>
                     </div>
                     {/* description */}
                     <div className="text-white">
