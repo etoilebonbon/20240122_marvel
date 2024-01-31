@@ -4,6 +4,7 @@ import { useQuery } from 'react-query'
 import { apiGetCharacters } from '../api'
 import { ScaleLoader } from 'react-spinners'
 
+
 export default function Characters() {
     let characters;
     const {data, isLoading} = useQuery(
@@ -15,6 +16,8 @@ export default function Characters() {
         characters = data?.data.results;
     }
 
+
+    console.log(characters)
   return <Layout>
     {/* 캐릭터 서브페이지 이미지 타이틀 */}
     <section className="relative w-full h-[400px]">

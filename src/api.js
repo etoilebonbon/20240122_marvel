@@ -26,7 +26,7 @@ export async function apiGetEvents() {
 export async function apiGetCharacters({queryKey}) {
   const limit = queryKey[1].limit
   try{
-    return await fetch(`${BASE_URL}/creators?limit=${limit}&apikey=${API_KEY}`, {
+    return await fetch(`${BASE_URL}/characters?limit=${limit}&apikey=${API_KEY}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
