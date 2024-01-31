@@ -23,7 +23,7 @@ export async function apiGetEvents() {
 
 
 // [GET] Characters 리스트
-export async function apiGetCharaters({queryKey}) {
+export async function apiGetCharacters({queryKey}) {
   const limit = queryKey[1].limit
   try{
     return await fetch(`${BASE_URL}/creators?limit=${limit}&apikey=${API_KEY}`, {
