@@ -30,14 +30,16 @@ export default function Header() {
             </div>
             {/* 중앙: 로고 */}
             <div className="absolute h-full top-0 left-[50%] -translate-x-[50%]">
-                <img className="h-full" src={LogoLarge} alt="logo_large" />                
+                <Link to="/"><img className="h-full" src={LogoLarge} alt="logo_large" />{" "}</Link>                
             </div>
         </div>
     </section>
     <section className="w-full border border-gray-700 flex justify-center h-10
      bg-main-dark text-white uppercase space-x-8 font-sm items-center">
         <p>news</p>
-        <p>comics</p>
+        <Link to = "/comics">
+            <p>comics</p>{" "}
+        </Link>
         <Link to="/characters">
             <p>chracters</p>{" "}
         </Link>

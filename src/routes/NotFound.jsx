@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../components/Layout'
 import NotImage from "../assets/png/not-image.png"
 
